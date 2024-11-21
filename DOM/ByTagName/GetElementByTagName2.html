@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       <div id="main">
+         <p>HTML Elements by TagName</p>
+         <p>We will access the html elements by tag Name</p>
+       </div>
+
+       <div id="demo"></div>
+
+       <script>
+        const x = document.getElementById("main");
+        const y = x.getElementsByTagName("p");
+        
+        document.getElementById("demo").innerHTML = 
+        'The first paragraph (index 0) inside "main" is: ' + y[0].innerHTML;
+        
+        </script>
+</body>
+</html>

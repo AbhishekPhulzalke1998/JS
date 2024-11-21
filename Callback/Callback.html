@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function GoodMorning(){
+            document.write("Good Morning")
+        }
+
+        function GoodEvening(){
+            document.write("Good Evening")
+        }
+
+         function GoodNight(){
+            document.write("Good Night")
+        }
+
+        function name(fname,lname,callback){
+            document.write(fname + ":" +lname );
+            callback();
+        }
+        name("Abhishek","Phulzalke",GoodMorning)
+        name("Rajesh","Palav",GoodEvening)
+        name("Sachin","padte",GoodNight)
+    </script>
+</body>
+</html>

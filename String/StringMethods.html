@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // String length
+        var a = "Abhishek";
+        var b = a.length;
+        document.write(b + "<br>");
+
+        // to uppercase
+        var c = "gaurav";
+        var d = c.toUpperCase();
+        document.write(d + "<br>");
+
+        //includes
+        var h = "javascript is good langauge to learn ";
+        var j = h.includes("is")
+        document.write(j + "<br>");
+
+        //starts With
+        var x = "Mumbai is great city";
+        var y = x.startsWith("Mum");
+        document.write(y + "<br>");
+
+        //search
+        var h = "javascript is good langauge to learn ";
+        var j = h.search("is");
+        document.write(j + "<br>");
+
+        //match
+        var h = "javascript is good langauge to is learn ";
+        var j = h.match(/is/g);
+        document.write(j + "<br>");
+
+        //indexof
+        var h = "javascript is good langauge to learn ";
+        var j = h.indexOf("is");
+        document.write(j + "<br>");
+
+        //Replace
+        var c = "gaurav";
+        var d = c.replace("g", "s");
+        document.write(d + "<br>");
+
+        //concat 
+        let A = "Beed";
+        let B = "Parbhani";
+        let C = "Latur"
+        let D = A.concat(B, C);
+        document.write(D + "<br>");
+
+        //slice
+        var h = "javascript";
+        var j = h.slice(3, 6);
+        document.write(j + "<br>");
+
+        //substr
+        var h = "javascript";
+        var j = h.substr(3, 6);
+        document.write(j + "<br>");
+
+
+        //substring
+        var h = "javascript";
+        var j = h.substring(3, 6);
+        document.write(j);
+
+        //trim
+        var H = "  Hello World ";
+        var G = H.trim();
+        console.log(G);
+  </script>
+</body>
+
+</html>

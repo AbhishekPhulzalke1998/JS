@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array methods</title>
+</head>
+
+<body>
+    <script>
+        //array length
+        const fruits = ["Banana", "Orange", "Apple", "Mango", "Dragonfruit"];
+        let size = fruits.length;
+        console.log(size);
+
+        //JavaScript Array toString() Method
+
+        let courses = ["HTML", "CSS", "JavaScript", "React"];
+        let result = courses.toString();
+        console.log(result);
+
+        //JavaScript Array join() Method
+
+        let courses_sec = ["HTML", "CSS", "JavaScript", "React"]
+        let response = courses_sec.join('-');
+        console.log(response);
+
+        //Array concat() Method
+        let arr1 = [11, 12, 13];
+        let arr2 = [14, 15, 16];
+        let arr3 = [17, 18, 19];
+
+        let newArr = arr1.concat(arr2, arr3);
+        console.log(newArr);
+
+        // Array flat() Method :- is used to flattend the array i.e. it merge all the given array and reduce all the nesting present in it.
+
+        const arr = [['1', '2'], ['3', '4', '5', ['6'], '7']];
+        const flatArr = arr.flat(Infinity);
+        console.log(flatArr);
+
+
+        // Array.push() Method ;- is used to add element at the end of an Array
+
+        let numArr = [10, 20, 30, 40, 50];
+        numArr.push(60);
+        numArr.push(70, 80, 90);
+        console.log(numArr);
+
+        //Array.pop() Method :-  is used to remove elements from the end of an array.
+
+        let strArr = ["amit", "sumit", "anil"];
+        strArr.pop();
+        console.log(strArr);
+
+        // Array.unshift() Method :- add elements at start of Array
+
+        let val = ["amit", "sumit"];
+        val.unshift("sunil", "anil");
+        console.log(val);
+
+        //Array.shift() Method :- remove elementd from start of array
+
+        let vals = ["amit", "sumit"];
+        vals.shift();
+        console.log(vals);
+
+        var Name = ["Rinku", "Bholu", "Nilesh", "Nikhil", "Shantanu", "Banty", "Chandrashekhar"];
+        Name.splice(1, 6, "Guatam", "suresh");  // Here 1 is index and 3 is Count 
+        console.log( "The splice method result is ",Name);
+        //JavaScript Array.slice() Method :- returns a new array containing a portion of the original array, based on the start and end index provided as arguments
+
+
+        const arry = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+        const case1 = arry.slice(0, 3);
+        document.write("First 3 Array Elements: ", case1, "<br><br>");
+
+        const case2 = arry.slice(-3);
+        document.write("Last three  Elements: ", case2, "<br><br>");
+
+        const case3 = arry.slice(3, 8);
+        document.write("middle elements  Elements: ", case3, "<br><br>");
+
+        const case4 = arry.slice(5, 2);
+        document.write("Case 4: Start index is greater than end index: ", case4, "<br><br>");
+
+        const case5 = arry.slice(-6, 8);  // from -6 index to 9(non - inclusive) all in between elements are come
+        document.write("Case 5: Negative start index: ", case5, "<br><br>");
+
+        const case6 = arry.slice(2, -4); // from 2 to -4 (non - inclusive) all in between elements are come
+        document.write("Case 6: Negative end index: ", case6, "<br><br>");
+
+        const case7 = arry.slice(5);
+        document.write("Case 7: Only start index is provided: ", case7, "<br><br>");
+
+        const case8 = arry.slice(15, 20);
+        document.write("Case 8: Start and end index out of range: ", case8, "<br><br>");
+
+        const case9 = arry.slice(-5, -2);
+        document.write("Case 9: Start and end index are negative: ", case9, "<br><br>");
+
+
+        //Array Map Method 
+        let A = [2,4,6,8,10];
+        let B = A.map(val => val * val);
+        console.log(B);
+
+        //Array Filter method 
+        let C = [2,4,5,7,8,9]
+        let D = C.filter(val => val %2 == 0 )
+        console.log(D);
+
+        //Array reduce method
+        let E = [2,4,5,6,7,8]
+        let F = E.reduce((pre,cur) => pre + cur)
+        console.log(F);
+
+    </script>
+</body>
+
+</html>

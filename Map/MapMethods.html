@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         let methods_map = new Map();
+         methods_map.set("first name","sumit");
+         methods_map.set("last name","Jaiswal");
+         methods_map.set("website","geeksforgeeks")
+                    .set("friend 1","gourav")
+                    .set("friend 2","sourav");
+
+     console.log(methods_map);
+
+console.log("map1 has website ?" + methods_map.has("website"));
+console.log("map1 has friend 3 ?" + methods_map.has("friend 3"));
+console.log("get value for the key website"+ methods_map.get("website"));
+console.log("delete element with key website" + methods_map.delete("website"));
+console.log("map1 has friend 3 ?" + methods_map.has("website"));
+methods_map.clear();
+
+
+     
+    </script>
+</body>
+</html>

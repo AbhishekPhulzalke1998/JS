@@ -1,0 +1,13 @@
+
+{
+    "name ":"vishwajeet",
+     "age" : 25,
+     "is_student" : true,
+     "passpoet_No" : null,
+     "p_lan" : ["c","c++","java","python"],
+     "address": {
+                  "city" : "delhi",
+                  "state" : "new Delhi",
+                  "pincode" :110212
+     }
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sumAdd(a,b,...args){
+            let multi = a * b;
+            let sum = 0;
+            for(let arg of args){
+                sum += arg;
+            }
+               return[multi,sum];
+            }
+            console.log(sumAdd(4,4,2,5,7));
+    </script>
+</body>
+</html>

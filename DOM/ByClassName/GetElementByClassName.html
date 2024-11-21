@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <p class="demo">Hello Beed</p>
+      <p class="demo">Hello Pune</p>
+ 
+      <p id="intro"></p>
+      <script>
+        let x = document.getElementsByClassName("demo");
+
+ document.getElementById("intro").innerHTML= "Here we want to access the first paragraph of class demo :" + x[0].innerHTML;
+      </script>
+</body>
+</html>

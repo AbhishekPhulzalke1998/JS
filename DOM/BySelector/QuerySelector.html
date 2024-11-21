@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <p class="intro">Hello Nashik</p>
+      <p  class="intro">Hello Nagpur</p>
+      <p  class="intro">Hello Beed</p>
+      <p id="demo"></p>
+
+      <script>
+          const x  = document.querySelectorAll("p.intro");
+           document.getElementById("demo").innerHTML = 'The paragraph we want to access is the :' + x[1].innerHTML;
+      </script>
+</body>
+</html>
